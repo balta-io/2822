@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "06d6bc27-19f3-4a7c-8016-2697db5c0451",
+		"name": "Encontro Premium - Blazor WASM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5095/v1/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5095",
+					"path": [
+						"v1",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5095/v1/categories/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5095",
+					"path": [
+						"v1",
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Nova categoria\",\r\n    \"description\": \"Nova categoria desc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5095/v1/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5095",
+					"path": [
+						"v1",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Alterando Nova categoria\",\r\n    \"description\": \"Alterando Nova categoria desc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5095/v1/categories/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5095",
+					"path": [
+						"v1",
+						"categories",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5095/v1/categories/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5095",
+					"path": [
+						"v1",
+						"categories",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
